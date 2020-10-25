@@ -185,10 +185,7 @@ public class BlackJack extends Application {
 
         newDeck();
         newHand();
-    }
 
-    public static void main(String[] args) {
-        launch(args);
         int playerTotal = hand.evaluateHand();
         int dealerTotal = dealer.evaluateHand();
 
@@ -208,5 +205,9 @@ public class BlackJack extends Application {
             System.out.println("Wygrałeś");
             status.setText("Wygrałeś");
         }
+    }
+
+    public static void main(String[] args) {
+        launch(args);
     }
 }
